@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>円描画デモ</title>
+		<link rel="icon" sizes="16x16" href="en.ico">
+		<script src="circle_demo.js"></script>
+	</head>
+	<body>
+		<div style="position: fixed; right: 0; top: 0;">
+			<!-- GitHub Ribbons https://github.blog/news-insights/github-ribbons/ -->
+			<a href="https://github.com/mikecat/circle_demo"><img decoding="async" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_gray_6d6d6d.png" class="attachment-full size-full" alt="Fork me on GitHub" loading="lazy"></a>
+		</div>
+		<p>
+			<canvas id="thecanvas" width="640" height="480"></canvas>
+		</p>
+		<p id="invalidShowArea" style="color: red;">
+			パラメータが不正です。
+		</p>
+		<p>
+			円の直径：<input id="diameterArea" type="number" value="16" min="1" size="5">
+			余白：<input id="yohakuArea" type="number" value="10" min="0" size="3">
+			マスサイズ：<input id="masuSizeArea" type="number" value="30" min="1" size="3">
+			点の半径：<input id="pointRadiusArea" type="number" value="3" min="1" size="3">
+			<br>
+			<label for="useCenter">
+				<input id="useCenter" type="checkbox">
+				中心を使う
+			</label>
+			<label for="drawGrid">
+				<input id="drawGrid" type="checkbox" checked>
+				グリッドを描画
+			</label>
+			<label for="drawPoints">
+				<input id="drawPoints" type="checkbox" checked>
+				点を描画
+			</label>
+			<label for="drawCircle">
+				<input id="drawCircle" type="checkbox" checked>
+				円を描画
+			</label>
+			<label for="useHalfArea">
+				<input id="useHalfArea" type="checkbox" checked>
+				線を半ピクセルずらして描画
+			</label>
+			<br>
+			背景色：<input id="backColorArea" type="color" value="#ffffff">
+			線の色：<input id="lineColorArea" type="color" value="#000000">
+			描画色：<input id="circleColorArea" type="color" value="#80ffff">
+		</p>
+	</body>
+</html>
